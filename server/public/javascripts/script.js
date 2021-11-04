@@ -9,7 +9,7 @@ const saveLands = async () => {
         population: popInput.value
     }
 
-    await fetch("http://localhost:3000/", {
+    await fetch("https://cities-and-countries.herokuapp.com/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -23,4 +23,3 @@ const saveLands = async () => {
     
 };
 document.getElementById("btn").addEventListener("click", saveLands)
-console.log("hello");
